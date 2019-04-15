@@ -1,4 +1,14 @@
 <?php
+/**
+*
+* @Name : AutoNewsSubmitter/parse-attachments.php
+* @Version : 1.0
+* @Programmer : Max
+* @Date : 2019-04-15
+* @Released under : https://github.com/BaseMax/AutoNewsSubmitter/blob/master/LICENSE
+* @Repository : https://github.com/BaseMax/AutoNewsSubmitter
+*
+**/
 $input=file_get_contents("attachments.sql");
 preg_match_all("/\((?<id>[0-9]+)\, 1, ".
 	"\'([^\']+)\',".
